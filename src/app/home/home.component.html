@@ -1,0 +1,17 @@
+<div class="container">
+  <h5 class="text-white text-uppercase text-center mt-0 mb-3 font-weight-light pt-2">My home page</h5>
+  <p class="text-white text-lowercase text-center mt-0 mb-5 font-weight-light pt-2">On this page I can change my personal information</p>
+  <ul class="nav nav-pills d-flex align-items-end justify-content-center text-uppercase" >
+    <li class="nav-item text-center text-white mr-3" routerLinkActive = "activeButton"
+        >
+      <img src="../assets/img/homeIcon.png" class="img-fluid background  rounded-circle mt-3"/>
+      <a   class = "nav-link text-white" routerLink="/header/home/address" href="#"  >My address</a>
+    </li>
+    <li class="nav-item text-center ml-3 " routerLinkActive = "activeButton" [routerLinkActiveOptions]="{exact: false}" >
+      <img src="../assets/img/homeIcon.png" class="img-fluid background  rounded-circle mt-3"/>
+      <a   class = "nav-link text-white" routerLink="/header/home/children" >My children</a>
+    </li>
+
+  </ul>
+  <router-outlet></router-outlet>
+</div>

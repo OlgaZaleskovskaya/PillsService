@@ -1,0 +1,80 @@
+
+.container {
+  width:auto;
+  height: auto;
+  position:relative;
+
+}
+
+form {
+  margin: 0;
+}
+
+
+form >div.removeAddress {
+  width: 1.5rem;
+  height: 1.5rem;
+  border:1px solid white;
+  border-radius: 50%;
+}
+input {
+  height:1.5rem;
+  width: 90%;
+  box-sizing: border-box;
+  font-size: 0.7rem;
+  color:white;
+  background: #AA7625;
+  border:1px solid white;
+
+}
+
+input:disabled {
+  height:1.5rem;
+  width: 90%;
+  box-sizing: border-box;
+  font-size: 0.7rem;
+  background: transparent;
+}
+label, .labels{
+  font-size: 0.6rem;
+  margin-bottom: 0.2rem;
+
+}
+
+button.addAddress,div.lastGroup::after {
+  font-size: 0.6rem;
+  background-color: #F0633C;
+  border-radius: 2px;
+  border: 1px solid white;
+  padding: 0.5em 4em;
+  -webkit-box-shadow: 2px 4px 8px -1px rgba(0,0,0,0.4), inset 1px 1px 8px -1px rgba(255,252,255,0.5);
+  -moz-box-shadow: 2px 4px 8px -1px rgba(0,0,0,0.4), inset 1px 1px 8px -1px rgba(255,252,255,0.5);
+  box-shadow: 2px 4px 8px -1px rgba(0,0,0,0.1), inset 1px 1px 8px -1px rgba(255,252,255,0.5);
+
+}
+div.lastGroup::after{
+  content: 'Delete';
+  position: absolute;
+  text-transform: uppercase;
+  display: block;
+  padding: 0.5em 2em;
+  top: -0.1rem;
+  left: 20%;
+
+}
+input:focus {
+  color: black;
+}
+input.ng-invalid.ng-touched {
+  border: 1px solid #7e3f3f;
+  background-color: white;
+  color:red;
+}
+
+button.addAddress {
+  background-color: #007BFF;
+}
+
+button:disabled {
+  background-color: #5cb0ff;
+}

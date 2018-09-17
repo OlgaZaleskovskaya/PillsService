@@ -1,0 +1,20 @@
+<div class="container ">
+
+  <div class="col-12 d-flex justify-content-center  mt-5" >
+    <div class="wrapper col-10 d-flex justify-content-between  mb-3 flex-wrap" >
+
+
+      <div class="child pr-4 pl-4 pt-1 pb-1  mt-2 col-5 text-white text-center m-2" *ngFor = "let item of children; let i = index">
+        <div [@divState]="state[i]" class="inner pl-4 pt-1 pb-1">
+          <p (click)="onAnimate(i)" class="small">{{item.name}}</p>
+          <button class="btn " type="button " (click) = "toRecipes(i)">Recipe</button>
+          <button class="btn " (click) = "toDoctor(i)">{{item.doctor}}</button>
+          <button class="btn exit " type="button" (click)="closeAnimated()">Exit</button>
+        </div>
+      </div>
+
+
+
+      </div>
+    </div>
+  </div>

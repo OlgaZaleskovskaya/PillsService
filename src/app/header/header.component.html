@@ -1,0 +1,25 @@
+<div class="container position-relative">
+
+  <div class="row">
+<header class = "col-12 pb-3 ">
+  <ul class="nav nav-pills d-flex align-items-end justify-content-center small ">
+    <li class="nav-item flex-fill">
+      <a class="nav-link text-uppercase text-light text-center"  [routerLinkActiveOptions]="{exact: true}" routerLink="/header" href="#"  routerLinkActive = "active">Log out</a>
+    </li>
+    <li class="nav-item flexFill ">
+      <a class="nav-link text-uppercase text-light text-center" [routerLinkActiveOptions]="{exact: true}" routerLinkActive = "active" href="#" routerLink="/header/home" >Home</a>
+    </li>
+    <li class="nav-item flexFill">
+      <a class="nav-link text-uppercase text-light text-center" href="#" routerLinkActive = "active"  routerLink = "/header/signup">SignUp</a>
+    </li>
+    <li class="nav-item flexFill">
+      <a class="nav-link text-uppercase text-light text-center"  routerLinkActive = "active" href="#" routerLink = "/header/signin" >SignIn</a>
+    </li>
+    <li class="nav-item flexFill">
+      <a class="nav-link  text-uppercase text-light text-center" routerLinkActive = "active" href="#" routerLink = "/header/test" >form 17</a>
+    </li>
+  </ul>
+</header>
+</div>
+  <router-outlet></router-outlet>
+</div>
