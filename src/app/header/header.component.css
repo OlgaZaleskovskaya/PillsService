@@ -21,3 +21,13 @@ ul{
   width: 20%;
   box-sizing: border-box;
 }
+
+
+a {
+  color: #1A6090;
+  text-decoration: none;
+}
+.activeLoginLink {
+
+  font-weight: bolder;
+}

@@ -1,24 +1,32 @@
-<div class="container position-relative">
+<div class="container position-relative ">
 
-  <div class="row">
-    <header class = "col-12 pb-3 ">
+  <div class="row ">
+    <header class="col-12 pb-3 ">
       <ul class="nav nav-pills d-flex align-items-end justify-content-center small ">
         <li class="nav-item flex-fill">
-         <!-- <a class="nav-link text-uppercase text-light text-center"  [routerLinkActiveOptions]="{exact: true}" routerLink="home" href="#"  routerLinkActive = "active">Log out</a>-->
-          <a class="nav-link text-uppercase text-light text-center"   href="#"  >Log out</a>
+          <!-- <a class="nav-link text-uppercase text-light text-center"  [routerLinkActiveOptions]="{exact: true}" routerLink="home" href="#"  routerLinkActive = "active">Log out</a>-->
+          <a class="nav-link text-uppercase text-light text-center" href="#">Log out</a>
         </li>
         <li class="nav-item flexFill ">
-          <a class="nav-link text-uppercase text-light text-center" routerLinkActive = "active" href="#" routerLink="home" >Home</a>
+          <a class="nav-link text-uppercase text-light text-center" routerLinkActive="active" href="#"
+             routerLink="home">Home</a>
         </li>
         <li class="nav-item flexFill">
-          <a class="nav-link text-uppercase text-light text-center" href="#" routerLinkActive = "active"  routerLink = "familyDoctor">Family Doctor</a>
+          <a class="nav-link text-uppercase text-light text-center" href="#" routerLinkActive="active"
+             routerLink="familyDoctor">Family Doctor</a>
         </li>
         <li class="nav-item flexFill">
-          <a class="nav-link text-uppercase text-light text-center"  routerLinkActive = "active" href="#" routerLink = "recipe" >Recipe</a>
+          <a class="nav-link text-uppercase text-light text-center" routerLinkActive="active" href="#"
+             routerLink="recipe">Recipe</a>
         </li>
         <li class="nav-item flexFill">
-          <a class="nav-link  text-uppercase text-light text-center" routerLinkActive = "active" href="#" routerLink = "form17" >form 17</a>
+          <a class="nav-link  text-uppercase text-light text-center" routerLinkActive="active" href="#"
+             routerLink="form17">form 17</a>
         </li>
+        <ul class="nav navbar-nav">
+          <li ><a appLinkHighlight class = "pl-2 pr-3 " routerLinkActive = "activeLoginLink" routerLink = "/signin">Registration</a></li>
+          <li ><a appLinkHighlight class = "pl-2 pr-3 mt-2" routerLinkActive = "activeLoginLink" routerLink = "/signup">Log in</a></li>
+        </ul>
       </ul>
     </header>
   </div>

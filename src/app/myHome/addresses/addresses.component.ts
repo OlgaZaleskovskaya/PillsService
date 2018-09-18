@@ -25,7 +25,7 @@ this.userService.loadUserFromServer().subscribe((response) => {
   console.log('address on init');
   console.log(response);
   this.currentUser = this.userService.getUserInfo();
-})
+});
     console.log(this.currentUser);
 
  /*  console.log('address component onInit');
@@ -44,7 +44,7 @@ this.userService.loadUserFromServer().subscribe((response) => {
 
   onEdit() {
     this.mode = 'edit';
-    this.router.navigate(['/header/home/address/', this.mode ]);
+    this.router.navigate(['/home/address/', this.mode ]);
   }
 
 }

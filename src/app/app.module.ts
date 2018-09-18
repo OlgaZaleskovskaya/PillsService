@@ -12,7 +12,13 @@ import {AuthModule} from './auth/auth.module';
 import {RecipeModule} from './recipe/recipe.module';
 import {DoctorModule} from './doctor/doctor.module';
 import {Form17Module} from './form17/form17.module';
+import { LoadingPageComponent } from './loading-page/loading-page.component';
+import {LinkHighlightDirective} from './directive/link-hightlight.directive';
 import {MyHomeModule} from './myHome/myHome.module';
+
+
+
+
 
 
 
@@ -20,6 +26,8 @@ import {MyHomeModule} from './myHome/myHome.module';
   declarations: [
     AppComponent,
     HeaderComponent,
+    LoadingPageComponent,
+    LinkHighlightDirective,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +38,7 @@ import {MyHomeModule} from './myHome/myHome.module';
     RecipeModule,
     DoctorModule,
     Form17Module,
-    MyHomeModule
+
   ],
   providers: [
     UserInfoService,

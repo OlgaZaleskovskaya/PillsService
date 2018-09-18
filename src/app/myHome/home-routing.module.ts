@@ -7,7 +7,7 @@ import {AddressesComponent} from './addresses/addresses.component';
 
 const homeRoutes: Routes = [
   {
-    path: 'home', component: HomeComponent, children: [
+    path: '', component: HomeComponent, children: [
       {path: 'address', component: AddressesComponent},
       {path: 'address/edit', component: AddressesEditComponent},
       {path: 'children', component: ChildrenComponent},
