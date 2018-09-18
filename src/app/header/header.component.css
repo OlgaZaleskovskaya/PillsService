@@ -5,7 +5,7 @@ header{
   margin: auto;
   border-bottom: 1px solid whitesmoke;
 }
- li a.active {
+li a.active {
   border-radius: 5px;
   background-color: rgba(255,255,255, 0.2);
   -webkit-box-shadow: 2px 4px 8px -1px rgba(0,0,0,0.4), inset 1px 1px 8px -1px rgba(255,252,255,0.5);;
@@ -13,12 +13,11 @@ header{
   box-shadow: 2px 4px 8px -1px rgba(0,0,0,0.1), inset 1px 1px 8px -1px rgba(255,252,255,0.5);;
 
 }
- ul{
-   position: relative;
-   top:90%;
- }
- .flexFill{
-   width: 20%;
-   box-sizing: border-box;
- }
-
+ul{
+  position: relative;
+  top:90%;
+}
+.flexFill{
+  width: 20%;
+  box-sizing: border-box;
+}

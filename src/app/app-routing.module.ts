@@ -1,29 +1,26 @@
 import {RouterModule, Routes} from '@angular/router';
 import {NgModule} from '@angular/core';
-import {HeaderComponent} from './header/header.component';
-import {AddressesComponent} from './addressForm/addresses/addresses.component';
-import {ChildrenComponent} from './children/children.component';
-import {HomeComponent} from './home/home.component';
-import {RecipesComponent} from './recipes/recipes.component';
-import {TestComponent} from './test/test.component';
-import {AddressesEditComponent} from './addressForm/addresses-edit/addresses-edit.component';
-import { SignupComponent} from './auth/signup/signup.component';
+import {AddressesComponent} from './myHome/addresses/addresses.component';
+import {ChildrenComponent} from './myHome/children/children.component';
+import {HomeComponent} from './myHome/home/home.component';
+import {AddressesEditComponent} from './myHome/addresses-edit/addresses-edit.component';
 import {SigninComponent} from './auth/signin/signin.component';
+import {SignupComponent} from './auth/signup/signup.component';
+import {DoctorComponent} from './doctor/doctor/doctor.component';
+import {RecipeComponent} from './recipe/recipe/recipe.component';
+import {Form17Component} from './form17/form17/form17.component';
+
 
 const appRoutes: Routes = [
-  {path: '', component: HeaderComponent},
-  {path: 'header', component: HeaderComponent, children: [
-      { path: 'home', component: HomeComponent, children: [
-          {path: 'address', component: AddressesComponent},
-          {path: 'address/edit', component: AddressesEditComponent},
-          {path: 'children', component: ChildrenComponent},
-        ] },
-      {path: 'recipes', component: RecipesComponent},
-      {path: 'test', component: TestComponent},
-      {path: 'signup', component: SignupComponent},
-      {path: 'signin', component: SigninComponent},
-    ]},
-];
+    {path: '', redirectTo: '/home', pathMatch: 'full'},
+
+    {path: 'familyDoctor', component: DoctorComponent},
+    {path: 'form17', component: Form17Component},
+    {path: 'recipe', component: RecipeComponent},
+    {path: 'signup', component: SignupComponent},
+    {path: 'signin', component: SigninComponent},
+  ]
+;
 
 @NgModule({
   imports: [

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {animate, state, style, transition, trigger} from '@angular/animations';
-import {UserInfoService} from '../shared/userInfo.service';
-import {Child} from '../shared/child.model';
+import {UserInfoService} from '../../shared/userInfo.service';
+import {Child} from '../../shared/child.model';
 
 @Component({
   selector: 'app-children',
