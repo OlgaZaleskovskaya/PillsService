@@ -6,19 +6,17 @@ import {AppRoutingModule} from './app-routing.module';
 import {UserInfoService} from './shared/userInfo.service';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {DataStorageService} from './shared/data-storage.service';
-import { HttpClientModule} from '@angular/common/http';
-import {AuthService} from './auth/auth.service';
-import {AuthModule} from './auth/auth.module';
-import {RecipeModule} from './recipe/recipe.module';
-import {DoctorModule} from './doctor/doctor.module';
-import {Form17Module} from './form17/form17.module';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
+import {AuthService} from './modules/auth/auth.service';
+import {AuthModule} from './modules/auth/auth.module';
+import {RecipeModule} from './modules/recipe/recipe.module';
+import {DoctorModule} from './modules/doctor/doctor.module';
+import {Form17Module} from './modules/form17/form17.module';
 import { LoadingPageComponent } from './loading-page/loading-page.component';
 import {LinkHighlightDirective} from './directive/link-hightlight.directive';
-import {MyHomeModule} from './myHome/myHome.module';
-
-
-
-
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import {AuthGuardService} from './auth-guard.service';
+import {AuthInterceptor} from './shared/auth.interceptor';
 
 
 
@@ -28,6 +26,7 @@ import {MyHomeModule} from './myHome/myHome.module';
     HeaderComponent,
     LoadingPageComponent,
     LinkHighlightDirective,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,7 +42,9 @@ import {MyHomeModule} from './myHome/myHome.module';
   providers: [
     UserInfoService,
     DataStorageService,
-    AuthService
+    AuthService,
+    AuthGuardService,
+    {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true}
   ],
   bootstrap: [AppComponent]
 })

@@ -23,10 +23,10 @@
           <a class="nav-link  text-uppercase text-light text-center" routerLinkActive="active" href="#"
              routerLink="form17">form 17</a>
         </li>
-        <ul class="nav navbar-nav">
-          <li ><a appLinkHighlight class = "pl-2 pr-3 " routerLinkActive = "activeLoginLink" routerLink = "/signin">Registration</a></li>
-          <li ><a appLinkHighlight class = "pl-2 pr-3 mt-2" routerLinkActive = "activeLoginLink" routerLink = "/signup">Log in</a></li>
-        </ul>
+
+        <!--<li ><a appLinkHighlight class = "pl-2 pr-3 " routerLinkActive = "activeLoginLink" routerLink = "/signin">Registration</a></li>-->
+          <li *ngIf = "!authService.isLoggedIn" ><a class="nav-link  text-uppercase text-light text-center" routerLinkActive = "activeLoginLink" routerLink = "/signin">Log in</a></li>
+        <li *ngIf = "authService.isLoggedIn" ><a class="nav-link  text-uppercase text-light text-center" (click)="onLogOut()" routerLinkActive = "/home" >Log out</a></li>
       </ul>
     </header>
   </div>

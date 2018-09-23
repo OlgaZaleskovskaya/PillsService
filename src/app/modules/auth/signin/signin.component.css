@@ -1,0 +1,13 @@
+.container {
+  margin-top: 50px;
+}
+ .isinvalid {
+   background-color: greenyellow;
+ }
+
+ .onRegister {
+   font-size: 0.8rem;
+ }
+.onRegister > span {
+  cursor: pointer;
+}
