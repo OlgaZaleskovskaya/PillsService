@@ -2,16 +2,19 @@
   <h5 class="text-white text-uppercase text-center mt-0 mb-3 font-weight-light pt-2">My home page</h5>
   <p class="text-white text-lowercase text-center mt-0 mb-5 font-weight-light pt-2">On this page I can change my personal information</p>
   <ul class="nav nav-pills d-flex align-items-end justify-content-center text-uppercase" >
-    <li class="nav-item text-center text-white mr-3" routerLinkActive = "activeButton"
-        >
+    <li class="nav-item text-center text-white mr-3" routerLinkActive = "activeButton">
       <img src="../assets/img/homeIcon.png" class="img-fluid background  rounded-circle mt-3"/>
-      <a   class = "nav-link text-white" routerLink="/home/address" href="#"  >My address</a>
+      <a   class = "nav-link text-white" routerLink="addressInfo"  >My address</a>
     </li>
     <li class="nav-item text-center ml-3 " routerLinkActive = "activeButton" >
       <img src="../assets/img/homeIcon.png" class="img-fluid background  rounded-circle mt-3"/>
-      <a   class = "nav-link text-white" routerLink="/home/children" >My children</a>
+      <a   class = "nav-link text-white" routerLink="children" >My children</a>
     </li>
-
+    <!--<li class="nav-item text-center ml-3 " routerLinkActive = "activeButton" >
+      <img src="../assets/img/homeIcon.png" class="img-fluid background  rounded-circle mt-3"/>
+      <a   class = "nav-link text-white" routerLink="editInfo" >Edit</a>
+    </li>-->
   </ul>
   <router-outlet></router-outlet>
 </div>
+

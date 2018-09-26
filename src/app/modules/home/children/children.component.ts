@@ -32,7 +32,7 @@ export class ChildrenComponent implements OnInit {
   public children: Child[];
 
   constructor( private userService: UserInfoService) {
-this.children = userService.getChildren();
+    this.children = userService.getChildren();
   }
 
   ngOnInit() {

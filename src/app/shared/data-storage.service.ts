@@ -15,7 +15,7 @@ export class DataStorageService {
  token = this.authService.getToken();
   fetchUsers() {
   /*  return this.httpClient.get('https://maccabi-b2bd7.firebaseio.com/data.json?auth=' +  this.token, {observe: 'response'});*/
-     return this.httpClient.get('https://maccabi-b2bd7.firebaseio.com/data.json?', {observe: 'response'});
+     return this.httpClient.get('https://maccabi-b2bd7.firebaseio.com/data.json', {observe: 'response'});
       /* return this.httpClient.get('https://maccabi-b2bd7.firebaseio.com/data.json',
        {observe: 'response', params: new HttpParams().set('auth', this.token)});*/
      /* .pipe(
@@ -33,6 +33,6 @@ export class DataStorageService {
 
   storeUser(user: User) {
     // const req = new HttpRequest('PUT', 'https://maccabi-b2bd7.firebaseio.com/data.json', user, {reportProgress: true, params: });
-   return this.httpClient.put('https://maccabi-b2bd7.firebaseio.com/data.json?' , user, {observe: 'response'});
+   return this.httpClient.put('https://maccabi-b2bd7.firebaseio.com/data.json' , user, {observe: 'response'});
   }
 }

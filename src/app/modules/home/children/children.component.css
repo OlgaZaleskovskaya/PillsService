@@ -1,6 +1,6 @@
 div.child {
   border-radius: 4px;
-height: 30px;
+  height: 30px;
   outline: 2px solid white;
   outline-offset: -2px;
   background-color: #B0944E;
@@ -18,14 +18,14 @@ div.wrapper {
 }
 div.inner {
   position:absolute;
- width: 100%;
+  width: 100%;
   top:0;
   left:0;
   z-index: 2;
   border-radius: 4px;
   border: 2px solid white;
   box-sizing: border-box;
-overflow: hidden;
+  overflow: hidden;
 
 }
 
@@ -33,7 +33,7 @@ button {
   font-size: 0.8rem;
   background-color: #E2A435;
   border-radius: 2px;
- border: none;
+  border: none;
   padding: 0.5em 4em;
   -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
@@ -41,7 +41,7 @@ button {
   color: white;
   display: block;
   width: 80%;
-margin: 1rem auto;
+  margin: 1rem auto;
 }
 button.exit{
   font-size: 0.6rem;

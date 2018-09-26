@@ -17,7 +17,8 @@ import {LinkHighlightDirective} from './directive/link-hightlight.directive';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import {AuthGuardService} from './auth-guard.service';
 import {AuthInterceptor} from './shared/auth.interceptor';
-
+import {PillsModule} from './modules/pills/pills.module';
+import {HomeModule} from './modules/home/home.module';
 
 
 @NgModule({
@@ -37,6 +38,8 @@ import {AuthInterceptor} from './shared/auth.interceptor';
     RecipeModule,
     DoctorModule,
     Form17Module,
+    PillsModule,
+    HomeModule
 
   ],
   providers: [
